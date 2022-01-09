@@ -1,8 +1,8 @@
+// SPDX-License-Identifier: MIT
+
 // Sources flattened with hardhat v2.8.1 https://hardhat.org
 
 // File contracts/openzeppelin/contracts/utils/Context.sol
-
-// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -29,7 +29,7 @@ abstract contract Context {
 
 // File contracts/openzeppelin/contracts/utils/math/SafeMath.sol
 
-// SPDX-License-Identifier: MIT
+
 
 pragma solidity ^0.8.0;
 
@@ -259,7 +259,7 @@ library SafeMath {
 
 // File contracts/interfaces/IPaperChildrenV1.sol
 
-// SPDX-License-Identifier: MIT
+
 
 pragma solidity ^0.8.10;
 
@@ -306,7 +306,7 @@ interface IPaperChildrenV1 {
 
 // File contracts/Sale/SaleV1.sol
 
-// SPDX-License-Identifier: MIT
+
 
 pragma solidity ^0.8.10;
 
