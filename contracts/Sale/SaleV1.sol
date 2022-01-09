@@ -57,8 +57,8 @@ contract SaleV1 is Context {
 		uint256 contractBalance = address(this).balance;
 		uint256 percentage = contractBalance / 100;
 
-		require(payable(C1).send(percentage * 33));
-		require(payable(C2).send(percentage * 67));
+		require(payable(C1).send(percentage * 34));
+		require(payable(C2).send(percentage * 66));
 	}
 
 	function setDevAddress(address changeAddress) public onlyCreator {
