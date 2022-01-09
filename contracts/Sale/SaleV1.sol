@@ -17,7 +17,7 @@ contract SaleV1 is Context {
 	address public C1;
 	address public C2;
 
-	mapping(address => bool) buyerList;
+	mapping(address => bool) public buyerList;
 
 	modifier onlyCreator() {
 		require(devAddress == _msgSender(), "onlyCreator: caller is not the creator");
@@ -51,7 +51,6 @@ contract SaleV1 is Context {
 
 	function preMint(address _to) public payable onlyCreator {
 		PaperChildrenContract.mint(_to);
-		buyerList[_to] = true;
 	}
 
 	function withdraw() public payable onlyCreator {
