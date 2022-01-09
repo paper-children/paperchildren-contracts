@@ -35,11 +35,13 @@ contract SaleV1 is Context {
 	constructor(
 		address v1Contract,
 		address _C1,
-		address _C2
+		address _C2,
+		address _dev
 	) {
 		PaperChildrenContract = IPaperChildrenV1(v1Contract);
 		C1 = _C1;
 		C2 = _C2;
+		devAddress = _dev;
 	}
 
 	function publicSale() public payable saleRole {
